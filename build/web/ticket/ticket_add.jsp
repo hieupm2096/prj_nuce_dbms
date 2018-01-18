@@ -22,7 +22,7 @@
         <link href="http://localhost:8080/ProjectLibrary/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <!-- Custom styles for this template-->
         <link href="http://localhost:8080/ProjectLibrary/css/sb-admin.min.css" rel="stylesheet">
-        <link href="http://localhost:8080/ProjectLibrary/css/bootstrap-select.min.css" rel="stylesheet">
+        <link href="http://localhost:8080/ProjectLibrary/css/bootstrap-select.css" rel="stylesheet">
     </head>
 
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
