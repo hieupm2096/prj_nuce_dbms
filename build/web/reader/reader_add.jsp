@@ -29,7 +29,6 @@
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
         <!-- Navigation-->
         <jsp:include page="../template/navbar.jsp" />
-        
         <!--Content-->
         <div class="content-wrapper">
             <div class="col-lg-12">
@@ -101,33 +100,24 @@
             </div>
             <!-- /.container-fluid-->
             <!-- /.content-wrapper-->
-
             <!--Footer-->
             <jsp:include page="../template/footer.jsp" />
-            
             <!-- Scroll to Top Button-->
             <jsp:include page="../template/scrollToTop.jsp" />
-            
             <!-- Logout Modal-->
             <jsp:include page="../template/logout.jsp" />
-            
             <!-- Bootstrap core JavaScript-->
             <script src="http://localhost:8080/ProjectLibrary/vendor/jquery/jquery.min.js"></script>
             <script src="http://localhost:8080/ProjectLibrary/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            
             <!-- Core plugin JavaScript-->
             <script src="http://localhost:8080/ProjectLibrary/vendor/jquery-easing/jquery.easing.min.js"></script>
-            
             <!-- Page level plugin JavaScript-->
             <script src="http://localhost:8080/ProjectLibrary/vendor/datatables/jquery.dataTables.js"></script>
             <script src="http://localhost:8080/ProjectLibrary/vendor/datatables/dataTables.bootstrap4.js"></script>
-            
             <!-- Custom scripts for all pages-->
             <script src="http://localhost:8080/ProjectLibrary/js/sb-admin.min.js"></script>
-            
             <!-- Custom scripts for this page-->
             <script src="http://localhost:8080/ProjectLibrary/js/sb-admin-datatables.min.js"></script>
-            <script src="../js/sb-admin-Books.min.js"></script>
         </div>
     </body>
 

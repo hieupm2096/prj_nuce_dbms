@@ -28,75 +28,8 @@
 
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <a class="navbar-brand" href="../index.jsp">Library Manger</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                        <a class="nav-link" href="../index.jsp">
-                            <i class="fa fa-fw fa-dashboard"></i>
-                            <span class="nav-link-text">Dashboard</span>
-                        </a>
-                    </li>
-
-                    <!-- Book Manager -->
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-                        <a class="nav-link nav-link-collapse collapse" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-                            <i class="fa fa-fw fa-wrench"></i>
-                            <span class="nav-link-text">Books</span>
-                        </a>
-                        <ul class="sidenav-second-level collapse" id="collapseComponents">
-                            <li>
-                                <a href="../category/cate_list.jsp">Category</a>
-                            </li>
-                            <li>
-                                <a href="../author/author_list.jsp">Author</a>
-                            </li>
-                            <li>
-                                <a href="../book/book_list.jsp">Book</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Reader Manager -->
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Readers">
-                        <a class="nav-link" href="reader_list.jsp" style="color: white;">
-                            <i class="fa fa-fw fa-table"></i>
-                            <span class="nav-link-text">Readers</span>
-                        </a>
-                    </li>
-
-                    <!-- Ticket Manager -->
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tickets">
-                        <a class="nav-link" href="../ticket/ticket_list.jsp">
-                            <i class="fa fa-fw fa-link"></i>
-                            <span class="nav-link-text">Tickets</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav sidenav-toggler">
-                    <li class="nav-item">
-                        <a class="nav-link text-center" id="sidenavToggler">
-                            <i class="fa fa-fw fa-angle-left"></i>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <span class="nav-link" style="cursor: default; color: white;">Welcome ${currentSession._name}</span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <jsp:include page="../template/navbar.jsp" />
+        <!--Content-->
         <div class="content-wrapper">
             <div class="col-lg-12">
                 <a href="reader_list.jsp">
@@ -166,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!--Button-->
                 <div class="card-md3">
                     <a href="reader_add.jsp" class="btn btn-outline-primary btn-primary" style="text-decoration: none; text-transform: none; float: right;">
@@ -176,35 +108,12 @@
             </div>
             <!-- /.container-fluid-->
             <!-- /.content-wrapper-->
-            <footer class="sticky-footer">
-                <div class="container">
-                    <div class="text-center">
-                        <small>Copyright © Group 8 - Library Manager</small>
-                    </div>
-                </div>
-            </footer>
+            <!--Footer-->
+            <jsp:include page="../template/footer.jsp" />
             <!-- Scroll to Top Button-->
-            <a class="scroll-to-top rounded" href="#page-top">
-                <i class="fa fa-angle-up"></i>
-            </a>
+            <jsp:include page="../template/scrollToTop.jsp" />
             <!-- Logout Modal-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="#">Logout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <jsp:include page="../template/logout.jsp" />
             <!-- Bootstrap core JavaScript-->
             <script src="http://localhost:8080/ProjectLibrary/vendor/jquery/jquery.min.js"></script>
             <script src="http://localhost:8080/ProjectLibrary/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

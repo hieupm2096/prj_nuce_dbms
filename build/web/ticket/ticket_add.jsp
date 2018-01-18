@@ -22,7 +22,7 @@
         <link href="http://localhost:8080/ProjectLibrary/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <!-- Custom styles for this template-->
         <link href="http://localhost:8080/ProjectLibrary/css/sb-admin.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/bootstrap-select.css">
+        <link href="http://localhost:8080/ProjectLibrary/css/bootstrap-select.min.css" rel="stylesheet">
     </head>
 
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -289,7 +289,7 @@
         <!-- Custom scripts for all pages-->
         <script src="http://localhost:8080/ProjectLibrary/js/sb-admin.min.js"></script>
         <!-- Custom scripts for this page-->
-        <script src="../js/bootstrap-select.js"></script>
+        <script src="http://localhost:8080/ProjectLibrary/js/bootstrap-select.js"></script>
 
         <script>
             $(function () {

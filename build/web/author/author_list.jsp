@@ -41,14 +41,6 @@
                 <div class="card mb-3">
                     <div class="card-header">
                         <i class="fa fa-table"></i> Author
-                        <form action="author_list.jsp?ac=search" method="POST" style="float: right;">
-                            <div class="input-group">
-                                <input name="txtSearch" type="text" class="form-control" placeholder="search for..." value="${param.txtSearch}">
-                                <span class="input-group-btn">
-                                    <input type="submit" class="btn btn-outline-secondary" value="Go">
-                                </span>
-                            </div>
-                        </form>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -59,6 +51,10 @@
                             <c:choose>
                                 <c:when test="${result.rowCount != 0}">
                                     <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+                                        <col width="10%">
+                                        <col width="60%">
+                                        <col width="20%">
+                                        <col width="10%">
                                         <thead>
                                             <tr>
                                                 <th>#</th>
@@ -122,6 +118,13 @@
             <script src="http://localhost:8080/ProjectLibrary/js/sb-admin.min.js"></script>
             <!-- Custom scripts for this page-->
             <script src="http://localhost:8080/ProjectLibrary/js/sb-admin-datatables.min.js"></script>
+            <script>
+                $('#dataTable').DataTable({
+                    fixedColumn: true,
+                    pageLength: 5,
+                    lengthMenu: [5, 10, 20, 50]
+                });
+            </script>
         </div>
     </body>
 

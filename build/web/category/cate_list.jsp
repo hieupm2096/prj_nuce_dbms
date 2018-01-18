@@ -52,6 +52,10 @@
                             <c:choose>
                                 <c:when test="${result.rowCount != 0}">
                                     <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+                                        <col width="10%">
+                                        <col width="60%">
+                                        <col width="20%">
+                                        <col width="10%">
                                         <thead>
                                             <tr>
                                                 <th>#</th>
@@ -116,7 +120,11 @@
             <!-- Custom scripts for this page-->
             <script src="http://localhost:8080/ProjectLibrary/js/sb-admin-datatables.min.js"></script>
             <script>
-                
+                $('#dataTable').DataTable({
+                    fixedColumn: true,
+                    pageLength: 5,
+                    lengthMenu: [5, 10, 20, 50]
+                });
             </script>
         </div>
     </body>

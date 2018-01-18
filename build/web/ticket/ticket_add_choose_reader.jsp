@@ -24,9 +24,6 @@
         <link href="http://localhost:8080/ProjectLibrary/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
         <!-- Custom styles for this template-->
         <link href="http://localhost:8080/ProjectLibrary/css/sb-admin.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.css"/>
-
-
     </head>
 
     <body>
@@ -77,14 +74,13 @@
 
 
         <!-- Bootstrap core JavaScript-->
-        <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+        <script src="http://localhost:8080/ProjectLibrary/vendor/jquery/jquery.min.js"></script>
         <script src="http://localhost:8080/ProjectLibrary/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- Core plugin JavaScript-->
         <script src="http://localhost:8080/ProjectLibrary/vendor/jquery-easing/jquery.easing.min.js"></script>
         <!-- Page level plugin JavaScript-->
-
         <script src="http://localhost:8080/ProjectLibrary/vendor/datatables/jquery.dataTables.js"></script>
-        <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+        <script src="http://localhost:8080/ProjectLibrary/vendor/datatables/dataTables.bootstrap4.js"></script>
         <!-- Custom scripts for all pages-->
         <script src="http://localhost:8080/ProjectLibrary/js/sb-admin.min.js"></script>
         <!-- Custom scripts for this page-->
@@ -96,7 +92,7 @@
                     "pageLength": 5,
                     "lengthMenu": [5, 10, 25]
                 });
-                addReader = function(rid) {
+                addReader = function (rid) {
                     var url = window.location.href;
                     var pattern = 'rid';
                     var regex = new RegExp(pattern);
